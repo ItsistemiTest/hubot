@@ -11,5 +11,10 @@ dpkg -s npm &>/dev/null || {
 }
 
 command -v hubot &>/dev/null || {
-  npm install -g yo generator-hubo
+  npm config set strict-ssl false
+  npm install -g yo generator-hubot
+  sudo npm cache clean -f
+  sudo npm install -g n
+  sudo n stable
 }
+
