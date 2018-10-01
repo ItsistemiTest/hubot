@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo add-apt-repository ppa:landscape/17.03
+sudo apt -y install landscape-server-quickstart
 apt-get -y update
 
 #check if npm package is already installed if not install it
