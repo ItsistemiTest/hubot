@@ -12,9 +12,11 @@ dpkg -s npm &>/dev/null || {
 
 command -v hubot &>/dev/null || {
   npm config set strict-ssl false
-  npm install -g yo generator-hubot
   sudo npm cache clean -f
   sudo npm install -g n
   sudo n stable
-}
+  sudo nodejs install -g n
+  sudo n stable
+  npm install -g yo generator-hubot
+ }
 
